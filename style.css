@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+.sky{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#2d2d2d, #8ea2df);
+    position: relative;
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    width: 100%;
+    object-fit:contain ;
+    bottom: 0;
+    left: 0;
+    transform: scale(1);
+}
+.sky i{
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    animation: infinite animate linear;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    10%, 90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
